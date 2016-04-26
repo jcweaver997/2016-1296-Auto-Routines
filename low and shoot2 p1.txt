@@ -1,36 +1,48 @@
 BEGIN
-# drop the first ball
-JAWOPEN
-DELAY 0.25
-JAWCLOSE
-# lower the scoop on the second ball 
-RIDE
-DELAY 0.5
-# pull the second ball forward a bit
-MMOVE .25 8
-# intake the second ball
-INTAKE
-MMOVE -.25 4
-DELAY 0.5
-STOPINTAKE
-RIDE
 TAILDOWN
-# quick S turn to get inline to go under the bar
-MMOVE .5 6
-TURN -15 1.0
-MMOVE .5 6
-TURN 0 1.0
-
-# TKB stopped testing here
-
-#MMOVE .5 18
-#LOWER
-#MOVE .5 162
-#TURN 60 1.0
-#SHOOT
-#TURN 0  2.0
-#MMOVE -.5 72
+LOWER
+MMOVE .75 145
+TURN 60 1.25
+SHOOT
+RIDE
+TURN 0  1.25
+MMOVE -.8 48
+TAILDOWN
+LOWEST
+MMOVE -.34 24
+MMOVE -.8 48
+TURN -30 1.25
+#MMOVE -1 14
+INTAKE
+MLINE -.20 36
+TAILDOWN
+#MMOVE 1 12
 #TAILDOWN
-#LOWEST
-#MMOVE -.3 84
-#END
+TURN 0 1.25
+RIDE
+LOWEST
+MMOVE .8 92
+TURN 60 1.
+SHOOT
+END
+
+# lower the scoop on the second ball 
+#RIDE
+#DELAY 0.5
+# pull the second ball forward a bit
+#MMOVE .25 8
+# intake the second ball
+#INTAKE
+#MMOVE -.25 4
+#DELAY 0.5
+#STOPINTAKE
+#RIDE
+#TAILDOWN
+# quick S turn to get inline to go under the bar
+#MMOVE .5 6
+#TURN -15 1.0
+#MMOVE .5 6
+#TURN 0 1.0
+#
+# TKB stopped testing here
+#
